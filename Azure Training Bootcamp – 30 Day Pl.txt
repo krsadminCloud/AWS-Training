@@ -1,0 +1,130 @@
+Azure Training Bootcamp – 30 Day Plan (Progress Updated)
+Day 1 – Core Lab Setup ✅
+•	Deploy Petstore WebApp + Azure SQL DB (public endpoint).
+•	Validate app connectivity.
+•	Seed DB with sample data.
+Day 2 – Networking Foundations ✅
+•	Create VNet + subnets.
+•	Deploy Domain Controller VM (on-prem lab).
+•	Plan subnet naming convention.
+Day 3 – Private Networking ✅
+•	Configure SQL DB Private Endpoint.
+•	Integrate WebApp with VNet.
+•	Deploy Private DNS zone.
+•	Exercises: Validate WebApp → SQL DB private IP, nslookup SQL FQDN.
+Day 4 – Monitoring & Security ✅
+•	Enable App Insights + Log Analytics Workspace (LAW).
+•	Configure Diagnostic Settings (WebApp + SQL).
+•	Add Access Restrictions (WebApp).
+•	Secure Key Vault access (WebApp Managed Identity).
+Day 5 – Hybrid Identity Integration ✅
+•	Configure Hybrid Identity (AD Connect / Entra ID).
+•	Test login/sync for on-prem and Entra accounts.
+•	Verify Entra ID join vs domain join.
+Day 6 – Landing Zone Governance ✅ (Expanded)
+•	Create Policy Assignments:
+•	  - Require Environment Tag
+•	  - Require CostCenter Tag
+•	  - Require Project Tag
+•	Enable Remediation.
+•	Validate compliance in Policy → Compliance dashboard.
+•	Expanded: Converted policies to use User Assigned Managed Identity (UAMI).
+•	Expanded: Created Enterprise-Tagging-Standards Initiative with 3 policies.
+•	Expanded: Assigned initiative at mg-apps scope with remediation task running.
+Day 7 – Hub-Spoke Network Model ✅
+•	Deploy Hub VNet (vnet-hub-prd-cc).
+•	Deploy Spoke VNet (vnet-petstore-prd-eus).
+•	Configure VNet Peering (Hub ↔ Spoke).
+•	Deploy Firewall Subnet.
+•	Route tables → test routing and isolation.
+•	Validate connectivity across Hub/Spoke.
+Day 8 – Bastion & Secure Access ⏭️
+•	Deploy Bastion host in Hub VNet.
+•	Validate RDP/SSH access without public IP.
+•	Remove public IPs from VMs.
+Day 9 – Firewall / NSG Policies ⏭️
+•	Deploy Azure Firewall in Hub subnet.
+•	Configure Firewall Rules (allow/deny outbound).
+•	Update NSGs for Spoke subnets.
+•	Validate rules enforcement.
+Day 10 – Application Gateway + WAF ⏭️
+•	Deploy App Gateway in front of Petstore WebApp.
+•	Enable WAF with OWASP rules.
+•	Validate SQLi / XSS protection.
+Day 11 – ExpressRoute / VPN Gateway ⏭️
+•	Configure VPN Gateway in Hub.
+•	Simulate connection to on-prem lab.
+•	Validate hybrid connectivity.
+Day 12 – Azure Arc ⏭️
+•	Connect on-prem servers to Azure Arc.
+•	Validate monitoring & update compliance from Azure.
+Day 13 – Azure Update Manager ⏭️
+•	Enable Update Manager for VMs.
+•	Schedule patching windows.
+•	Validate compliance reporting.
+Day 14 – Backup & Recovery ⏭️
+•	Configure Recovery Services Vault.
+•	Enable VM backup.
+•	Test restore operation.
+Day 15 – ASR (Azure Site Recovery) ⏭️
+•	Enable Site Recovery on key VM.
+•	Simulate failover to Azure.
+•	Validate failback.
+Day 16 – Key Vault Advanced ⏭️
+•	Configure Key Vault access policies.
+•	Test secret rotation with WebApp.
+•	Validate RBAC vs Access Policy model.
+Day 17 – Automation Runbooks ⏭️
+•	Create Deploy Runbook (deploy Petstore infra).
+•	Create Destroy Runbook (clean up infra).
+•	Test end-to-end automation.
+Day 18 – Cost Management & Budgets ⏭️
+•	Create budget alerts (daily + monthly).
+•	Configure cost by tags (CostCenter, Project).
+•	Validate reporting.
+Day 19 – Azure Monitor Alerts ⏭️
+•	Configure alert rules (WebApp availability, SQL DTU).
+•	Send to Action Group (email/Teams).
+•	Validate alert triggering.
+Day 20 – Defender for Cloud ⏭️
+•	Enable Defender for Cloud.
+•	Review Security Recommendations.
+•	Remediate key items.
+Day 21 – Logging & Audit ⏭️
+•	Enable Activity Logs to LAW.
+•	Review policy compliance logs.
+•	Export logs to storage for retention.
+Day 22 – Advanced Networking ⏭️
+•	Configure Private Link Service (simulate partner connection).
+•	Validate with VNet Integration.
+Day 23 – App Services Scaling ⏭️
+•	Enable Autoscale for WebApp.
+•	Load test traffic.
+•	Validate scale-out/in.
+Day 24 – SQL Serverless & Scaling ⏭️
+•	Switch SQL DB to Serverless tier.
+•	Configure Auto-pause.
+•	Validate cost savings.
+Day 25 – Storage & Encryption ⏭️
+•	Deploy Storage Account.
+•	Enable private endpoint + firewall.
+•	Validate access with Managed Identity.
+Day 26 – Event Grid + Logic Apps ⏭️
+•	Deploy Event Grid subscription (resource creation).
+•	Trigger Logic App to notify on new resources.
+Day 27 – DevOps Integration ⏭️
+•	Configure GitHub Actions or Azure DevOps pipeline.
+•	Automate WebApp deployment.
+•	Validate CI/CD flow.
+Day 28 – SLA & Availability Zones ⏭️
+•	Deploy SQL DB with Zone Redundancy.
+•	Deploy WebApp across AZs.
+•	Validate failover.
+Day 29 – Chaos Engineering ⏭️
+•	Use Chaos Studio to simulate failure.
+•	Validate resiliency of Petstore app.
+Day 30 – Wrap-Up & Review ⏭️
+•	Review bootcamp lab resources.
+•	Document naming conventions, governance, and automation.
+•	Run full Destroy Runbook to clean up.
+•	Summarize learnings + prepare interview answers.
